@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e4d57f5fae200c94f937c04ce2f48544
+guid: c6e27b93be9620d4c83bc6afcbb941b6
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,13 +7,33 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Toilet_Base
-    second: {fileID: 2100000, guid: fbc7883abb9909645934dcd14effd6c1, type: 2}
+      name: Mirror_Border
+    second: {fileID: 2100000, guid: b85c454ce23443d499a562c3429712cc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Toilet_Lever
-    second: {fileID: 2100000, guid: 7ff229a38ade0704cadc583526ccc6df, type: 2}
+      name: Mirror_Border.001
+    second: {fileID: 2100000, guid: b85c454ce23443d499a562c3429712cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mirror_Glass
+    second: {fileID: 2100000, guid: 586338c067640474ba266085ed27039e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mirror_Glass.001
+    second: {fileID: 2100000, guid: 586338c067640474ba266085ed27039e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mirror_Inner_Border
+    second: {fileID: 2100000, guid: f27168a2d247bef4ab909cd2bcfb191a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mirror_Inner_Border.001
+    second: {fileID: 2100000, guid: f27168a2d247bef4ab909cd2bcfb191a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +65,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.325
+    globalScale: 0.3
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -98,7 +118,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.0032499998
+    globalScale: 0.003
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
