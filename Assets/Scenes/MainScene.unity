@@ -787,6 +787,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Repair Task Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 797950866, guid: a259b9e4fdcf2c9458c3c4144466776b, type: 3}
+      propertyPath: taskHp
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 895754892, guid: a259b9e4fdcf2c9458c3c4144466776b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: ShowEndVoiceAndLoadScene
