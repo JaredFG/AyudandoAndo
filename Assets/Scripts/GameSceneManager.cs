@@ -7,41 +7,53 @@ public class GameSceneManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameView;
     [SerializeField] private GameObject pauseView;
+    [SerializeField] private GameObject gamewin;
+    [SerializeField] private GameObject gamelose;
+    [SerializeField] private GameObject endVoice;
+    [SerializeField] private float delayBeforeLoad = 3.0f;
 
     private void Start()
     {
-        if(gameView!=null && pauseView!=null)
-        {gameView.SetActive(true);
-        pauseView.SetActive(false);}
-        
+        if (gameView != null && pauseView != null)
+        {
+            gameView.SetActive(true);
+            pauseView.SetActive(false);
+        }
+
     }
 
     public void PauseMenu()
     {
-        if(gameView!=null && pauseView!=null)
-        {gameView.SetActive(false);
-        pauseView.SetActive(true);
-        Time.timeScale = 0.0f;}
-        
+        if (gameView != null && pauseView != null)
+        {
+            gameView.SetActive(false);
+            pauseView.SetActive(true);
+            Time.timeScale = 0.0f;
+        }
+
     }
 
     public void ResumeButton()
     {
-        if(gameView!=null && pauseView!=null)
-        {gameView.SetActive(true);
-        pauseView.SetActive(false);
-        Time.timeScale = 1.0f;}
-        
+        if (gameView != null && pauseView != null)
+        {
+            gameView.SetActive(true);
+            pauseView.SetActive(false);
+            Time.timeScale = 1.0f;
+        }
+
     }
 
     public void QuitButton()
     {
-        if(gameView!=null && pauseView!=null)
-        {gameView.SetActive(false);
-        pauseView.SetActive(false);
-        Time.timeScale = 1.0f;
-        SceneManager.LoadScene("ModeSelectionScene");}
-        
+        if (gameView != null && pauseView != null)
+        {
+            gameView.SetActive(false);
+            pauseView.SetActive(false);
+            Time.timeScale = 1.0f;
+            SceneManager.LoadScene("ModeSelectionScene");
+        }
+
     }
     public void StartButton()
     {
@@ -67,13 +79,37 @@ public class GameSceneManager : MonoBehaviour
     //Win
     public void ShowWinCanvas()
     {
-        MusicManager.Instance.ChangeMusic("Win");    
+        if (gamewin != null)
+        {
+            gamelose.SetActive(true);
+            gamewin.SetActive(false);
+            MusicManager.Instance.ChangeMusic("Win");
+        }
         //Activar canvas de ganar
     }
     /////////////////////////
     //Lose
     public void ShowLoseCanvas()
     {
-        MusicManager.Instance.ChangeMusic("Lose");    
+        if (gamelose != null)
+        {
+            gamelose.SetActive(true);
+            gamewin.SetActive(false);
+            MusicManager.Instance.ChangeMusic("Lose");
+        }
+
     }
+    public void ShowEndVoiceAndLoadScene()
+    {
+        if (endVoice != null)
+        {
+            endVoice.SetActive(true);
+        }
+        Invoke("LoadModeSelectionScene", delayBeforeLoad);
+    }
+    private void LoadModeSelectionScene()
+    {
+        SceneManager.LoadScene("ModeSelectionScene");
+    }
+
 }
