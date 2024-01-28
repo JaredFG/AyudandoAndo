@@ -258,8 +258,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imagenCarrusel: {fileID: 1505726562}
   imagenes:
-  - {fileID: 21300000, guid: 2c2856262db994d8e92931857477809b, type: 3}
-  - {fileID: 21300000, guid: e49e6a3d5804d4d819db38822c6d69ae, type: 3}
+  - {fileID: 21300000, guid: cebdff9a0efd84798a9a7d72a8cf3dd1, type: 3}
+  - {fileID: 21300000, guid: 4373963324e284222a30bd9b52fd7e7f, type: 3}
+  - {fileID: 21300000, guid: 2cf48a9fdb8354ed3bf2f60b42bd562c, type: 3}
+  - {fileID: 21300000, guid: fd6cf70257e5f4b9891d20546fc4b812, type: 3}
+  - {fileID: 21300000, guid: 211324fe218f34b949c4f7322b17ef79, type: 3}
+  - {fileID: 21300000, guid: 756035b0cbd04402bbb750e72cfc2249, type: 3}
 --- !u!1 &390924872
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0.48989856, b: 0.48989856, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
