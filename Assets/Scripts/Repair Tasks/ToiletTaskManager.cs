@@ -78,11 +78,11 @@ public class ToiletTaskManager : MonoBehaviour
     // PALANCA NORMAL
     private void PerformAction1()
     {
-        if (initialProblem == 2 && currentStep == 2 && toiletVersion == "MX" || toiletVersion == "EU")
+        if (initialProblem == 2 && currentStep == 2 && toiletVersion is "MX" or "EU")
         {
             MarkTaskDone();
         } 
-        else if (initialProblem == 0 || initialProblem == 1 && currentStep == 3 && toiletVersion == "MX" || toiletVersion == "EU")
+        else if (initialProblem is 0 or 1 && currentStep == 3 && toiletVersion is "MX" or "EU")
         {
             MarkTaskDone();
         }
@@ -99,7 +99,7 @@ public class ToiletTaskManager : MonoBehaviour
         {
             MarkTaskDone();
         }
-        else if (initialProblem == 0 || initialProblem == 1 && currentStep == 3 && toiletVersion == "JP")
+        else if (initialProblem is 0 or 1 && currentStep == 3 && toiletVersion == "JP")
         {
             MarkTaskDone();
         }
@@ -138,7 +138,7 @@ public class ToiletTaskManager : MonoBehaviour
     // ROMPER LA TAZA
     private void PerformAction4()
     {
-        if (currentStep == 1 && initialProblem == 1 || initialProblem == 2)
+        if (currentStep == 1 && initialProblem is 1 or 2)
         {
             currentStep++;
         }
@@ -164,7 +164,7 @@ public class ToiletTaskManager : MonoBehaviour
     // CERRAR LLAVE IZQUIERDA
     private void PerformAction6()
     {
-        if (currentStep == 2 && toiletVersion == "EU" || toiletVersion == "JP")
+        if (currentStep == 2 && toiletVersion is "JP" or "EU")
         {
             currentStep++;
         }
