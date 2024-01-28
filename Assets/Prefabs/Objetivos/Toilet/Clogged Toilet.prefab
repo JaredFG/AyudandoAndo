@@ -139,10 +139,6 @@ MonoBehaviour:
   textSpawns:
   - {fileID: 6603743612149534264}
   - {fileID: 5263131553612795189}
-  texts:
-  - MX
-  - EU
-  - JP
   textObject: {fileID: 5310641273456455873, guid: 66863184415c3c94fafa4a1380e37a2b,
     type: 3}
 --- !u!1 &1369166750862040089
@@ -241,6 +237,7 @@ GameObject:
   - component: {fileID: 8718706487208763815}
   - component: {fileID: 2232493397165810370}
   - component: {fileID: 8019993453027957055}
+  - component: {fileID: 9176949428683190298}
   m_Layer: 0
   m_Name: Lid
   m_TagString: Breakable
@@ -342,6 +339,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0069367224, y: 0.00085009955, z: 0.0026421517}
   m_Center: {x: 6.111804e-10, y: -0.000000002066372, z: 0.0000000038999133}
+--- !u!114 &9176949428683190298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4204260036371409962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &5271241259699031344
 GameObject:
   m_ObjectHideFlags: 0

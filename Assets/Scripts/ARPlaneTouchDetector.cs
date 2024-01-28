@@ -7,6 +7,7 @@ using System.Collections.Generic;
 public class ARPlaneTouchDetector : MonoBehaviour
 {
     [SerializeField] private float raycastDisntance;
+    [SerializeField] private ToolController toolController;
     
     private Vector2 touchPosition = default;
     Camera m_MainCamera;
@@ -36,7 +37,7 @@ public class ARPlaneTouchDetector : MonoBehaviour
 
                     if (hitObject.transform.gameObject.GetComponent<BreakObject>())
                     {
-                        //hitObject.transform.gameObject.GetComponent<BreakObject>().TakeDamage(1);
+                        hitObject.transform.gameObject.GetComponent<BreakObject>().TakeDamage(1, toolController.currentTool);
                     }
                 }
             }

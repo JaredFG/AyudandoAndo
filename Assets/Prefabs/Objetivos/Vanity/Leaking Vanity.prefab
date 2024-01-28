@@ -649,9 +649,6 @@ MonoBehaviour:
   - {fileID: 4547444261532535950}
   - {fileID: 4547444261921092009}
   - {fileID: 4547444261170009155}
-  texts:
-  - LB-420
-  - LB-619
   textObject: {fileID: 5310641273456455873, guid: 66863184415c3c94fafa4a1380e37a2b,
     type: 3}
 --- !u!1 &4055632627409225329
@@ -666,6 +663,7 @@ GameObject:
   - component: {fileID: 8918953077068859689}
   - component: {fileID: 6833481711978746316}
   - component: {fileID: 4547444260284135284}
+  - component: {fileID: 887793895640162373}
   m_Layer: 0
   m_Name: Left Door
   m_TagString: Breakable
@@ -752,10 +750,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 740d8ff6f72144a86ad971e980ffb76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destryedObject: {fileID: 919132149155446097, guid: 796434177d735124dbe49d3b6bd7a361,
+  destryedObject: {fileID: 2010334519421989938, guid: 5c297ef7f65f142879f2bf7970bcfc3c,
     type: 3}
   health: 1
   toolToUse: 3
+--- !u!65 &887793895640162373
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4055632627409225329}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0053293654, y: 0.0081575485, z: 0.0006049951}
+  m_Center: {x: 0.00004989527, y: 4.6566126e-10, z: 0.00022157737}
 --- !u!1 &4547444261170009154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,6 +1033,7 @@ GameObject:
   - component: {fileID: 4548898380855736350}
   - component: {fileID: 2495923768187366605}
   - component: {fileID: 4547444261118452148}
+  - component: {fileID: 4694813892738524694}
   m_Layer: 0
   m_Name: Right Door
   m_TagString: Breakable
@@ -1108,10 +1120,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 740d8ff6f72144a86ad971e980ffb76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destryedObject: {fileID: 919132149155446097, guid: 796434177d735124dbe49d3b6bd7a361,
+  destryedObject: {fileID: 2010334519421989938, guid: 5c297ef7f65f142879f2bf7970bcfc3c,
     type: 3}
   health: 1
   toolToUse: 3
+--- !u!65 &4694813892738524694
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7068265179540542719}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0053293654, y: 0.0081575485, z: 0.0006049954}
+  m_Center: {x: 0.0025956722, y: -0.00041624633, z: 0.00013242735}
 --- !u!1 &7290138307327237611
 GameObject:
   m_ObjectHideFlags: 0

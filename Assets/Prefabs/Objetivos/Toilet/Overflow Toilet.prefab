@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 740d8ff6f72144a86ad971e980ffb76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destryedObject: {fileID: 919132149155446097, guid: b4f4c1c22da937843b97074b7800d6a2,
+  destryedObject: {fileID: 3966554461373037871, guid: 4224af2fee8714fbd8d7f1056e9db595,
     type: 3}
   health: 1
   toolToUse: 1
@@ -401,10 +401,6 @@ MonoBehaviour:
   textSpawns:
   - {fileID: 7387748459634857758}
   - {fileID: 8370464949984138259}
-  texts:
-  - MX
-  - EU
-  - JP
   textObject: {fileID: 5310641273456455873, guid: 66863184415c3c94fafa4a1380e37a2b,
     type: 3}
 --- !u!1 &4013358814004863762
