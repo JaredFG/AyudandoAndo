@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameSceneManager : MonoBehaviour
 {
@@ -9,28 +10,49 @@ public class GameSceneManager : MonoBehaviour
 
     private void Start()
     {
-        gameView.SetActive(true);
-        pauseView.SetActive(false);
+        if(gameView!=null && pauseView!=null)
+        {gameView.SetActive(true);
+        pauseView.SetActive(false);}
+        
     }
 
     public void PauseMenu()
     {
-        gameView.SetActive(false);
+        if(gameView!=null && pauseView!=null)
+        {gameView.SetActive(false);
         pauseView.SetActive(true);
-        Time.timeScale = 0.0f;
+        Time.timeScale = 0.0f;}
+        
     }
 
     public void ResumeButton()
     {
-        gameView.SetActive(true);
+        if(gameView!=null && pauseView!=null)
+        {gameView.SetActive(true);
         pauseView.SetActive(false);
-        Time.timeScale = 1.0f;
+        Time.timeScale = 1.0f;}
+        
     }
 
     public void QuitButton()
     {
-        gameView.SetActive(false);
+        if(gameView!=null && pauseView!=null)
+        {gameView.SetActive(false);
         pauseView.SetActive(false);
         Time.timeScale = 1.0f;
+        SceneManager.LoadScene("ModeSelectionScene");}
+        
+    }
+    public void StartButton()
+    {
+        SceneManager.LoadScene("ModeSelectionScene");
+    }
+    public void UserButton()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
+    public void OperatorButton()
+    {
+        SceneManager.LoadScene("Manual");
     }
 }
