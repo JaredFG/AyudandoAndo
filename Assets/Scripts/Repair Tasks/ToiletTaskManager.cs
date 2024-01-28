@@ -147,7 +147,7 @@ public class ToiletTaskManager : MonoBehaviour
     // ROMPER LA TAZA
     private void PerformAction4()
     {
-        if (currentStep == 1 && initialProblem is 1 or 2)
+        if (currentStep == 1 && initialProblem is 0 or 1)
         {
             currentStep++;
         }
