@@ -71,6 +71,8 @@ public class MusicManager : MonoBehaviour
 
     public void ChangeMusic(string musicType)
     {
+        LowerCurrentMusicVolume(0.2f, 2f); // Reducir volumen antes de cambiar la música
+
         AudioClip clipToPlay = null;
 
         switch (musicType)
@@ -91,6 +93,26 @@ public class MusicManager : MonoBehaviour
             StartCoroutine(FadeMusic(clipToPlay));
             currentPlayingClip = clipToPlay;
         }
+    }
+
+    public void LowerCurrentMusicVolume(float targetVolume, float fadeDuration)
+    {
+        StartCoroutine(FadeOutCurrentMusic(targetVolume, fadeDuration));
+    }
+
+    private System.Collections.IEnumerator FadeOutCurrentMusic(float targetVolume, float fadeDuration)
+    {
+        float elapsedTime = 0f;
+        float startVolume = audioSource.volume;
+
+        while (elapsedTime < fadeDuration)
+        {
+            audioSource.volume = Mathf.Lerp(startVolume, targetVolume, elapsedTime / fadeDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        audioSource.volume = targetVolume;
     }
 
     private System.Collections.IEnumerator FadeMusic(AudioClip newClip)

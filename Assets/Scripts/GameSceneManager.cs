@@ -89,6 +89,7 @@ public class GameSceneManager : MonoBehaviour
             //menuButton2.interactable=false;
             gamelose.SetActive(false);
             gamewin.SetActive(true);
+            MusicManager.Instance.LowerCurrentMusicVolume(0.2f, 1f);
             MusicManager.Instance.ChangeMusic("Win");
         }
         //Activar canvas de ganar
@@ -103,6 +104,7 @@ public class GameSceneManager : MonoBehaviour
             //menuButton2.interactable=false;
             gamelose.SetActive(true);
             gamewin.SetActive(false);
+            MusicManager.Instance.LowerCurrentMusicVolume(0.2f, 1f);
             MusicManager.Instance.ChangeMusic("Lose");
         }
 
