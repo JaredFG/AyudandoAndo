@@ -63,4 +63,17 @@ public class GameSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene("ManualScene");
     }
+    /////////////////////////
+    //Win
+    public void ShowWinCanvas()
+    {
+        MusicManager.Instance.ChangeMusic("Win");    
+        //Activar canvas de ganar
+    }
+    /////////////////////////
+    //Lose
+    public void ShowLoseCanvas()
+    {
+        MusicManager.Instance.ChangeMusic("Lose");    
+    }
 }

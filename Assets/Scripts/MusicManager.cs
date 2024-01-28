@@ -15,6 +15,12 @@ public class MusicManager : MonoBehaviour
     private AudioSource audioSource;
     private AudioClip currentPlayingClip;
 
+    // Propiedad estática para acceder a la instancia desde otros scripts
+    public static MusicManager Instance
+    {
+        get { return instance; }
+    }
+
     private void Awake()
     {
         if (instance == null)
