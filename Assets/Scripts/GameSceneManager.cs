@@ -55,4 +55,12 @@ public class GameSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene("Manual");
     }
+    public void MenuButton()
+    {
+        SceneManager.LoadScene("ModeSelectionScene");
+    }
+    public void ManualButton()
+    {
+        SceneManager.LoadScene("ManualScene");
+    }
 }
