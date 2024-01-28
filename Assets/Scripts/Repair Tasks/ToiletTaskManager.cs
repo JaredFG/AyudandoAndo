@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 public class ToiletTaskManager : MonoBehaviour
 {
     [Header("Step Control")]
-    [SerializeField] private int currentStep = 0;
+    [SerializeField] public int currentStep = 0;
 
     /*
      * Initial Problems
@@ -21,11 +21,11 @@ public class ToiletTaskManager : MonoBehaviour
      * - JP
      */
 
-    [SerializeField] private int initialProblem = 0;
-    [SerializeField] private string toiletVersion = "MX";
+    [SerializeField] public int initialProblem = 0;
+    [SerializeField] public string toiletVersion = "MX";
     
     [Header("Contadores")]
-    [SerializeField] private int pumpsDone = 0;
+    [SerializeField] public int pumpsDone = 0;
     [SerializeField] private bool taskDone = false;
     
     private void Start()

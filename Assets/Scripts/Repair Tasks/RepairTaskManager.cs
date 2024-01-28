@@ -38,7 +38,7 @@ public class RepairTaskManager : MonoBehaviour
     private void Update()
     {
         integrityBar.fillAmount = (taskHp / 3);
-        textLabel.text = taskHp.ToString();
+        textLabel.text = $"%CS={toiletTaskManager.currentStep}, IP=${toiletTaskManager.initialProblem}, TV=${toiletTaskManager.toiletVersion}, PD=%{toiletTaskManager.pumpsDone}";
     }
 
     public void Toilet_PerformTask(int taskId)
@@ -48,7 +48,7 @@ public class RepairTaskManager : MonoBehaviour
 
     public void MarkMistake()
     {
-        taskHp--;
+        // taskHp--;
         CheckGameState();
     }
 
@@ -68,7 +68,7 @@ public class RepairTaskManager : MonoBehaviour
             Debug.Log("GAME OVER");
         }
 
-        if (tasksDone >= 2)
+        if (tasksDone > 0)
         {
             gameSceneManager.ShowWinCanvas();
             Debug.Log("YOU WIN");

@@ -720,7 +720,7 @@ GameObject:
   - component: {fileID: 7101546295516451652}
   m_Layer: 0
   m_Name: Lever
-  m_TagString: Lever
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
