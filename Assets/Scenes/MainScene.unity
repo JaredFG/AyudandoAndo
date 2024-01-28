@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
+  m_IndirectSpecularColor: {r: 0.17267816, g: 0.21577376, b: 0.2976624, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -786,6 +786,10 @@ PrefabInstance:
     - target: {fileID: 797950864, guid: a259b9e4fdcf2c9458c3c4144466776b, type: 3}
       propertyPath: m_Name
       value: Repair Task Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 797950866, guid: a259b9e4fdcf2c9458c3c4144466776b, type: 3}
+      propertyPath: taskHp
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 895754892, guid: a259b9e4fdcf2c9458c3c4144466776b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
