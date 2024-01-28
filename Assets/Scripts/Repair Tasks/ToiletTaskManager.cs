@@ -1,13 +1,14 @@
 using System;
+using System.Collections.Generic;
 using UnityEditor.TerrainTools;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class ToiletTaskManager : MonoBehaviour
 {
-    [Header("Step Control")] 
+    [Header("Step Control")]
     [SerializeField] private int currentStep = 0;
-    
+
     /*
      * Initial Problems
      * - #0 Fuga de agua
@@ -19,6 +20,7 @@ public class ToiletTaskManager : MonoBehaviour
      * - EU
      * - JP
      */
+
     [SerializeField] private int initialProblem = 0;
     [SerializeField] private string toiletVersion = "MX";
     
@@ -29,6 +31,7 @@ public class ToiletTaskManager : MonoBehaviour
     private void Start()
     {
         // TODO: AGREGAR VALORES INICIALES AL INICIAR EL JUEGO
+
     }
     
     /*
@@ -172,5 +175,11 @@ public class ToiletTaskManager : MonoBehaviour
         {
             RepairTaskManager.Instance.MarkMistake();
         }
+    }
+
+    public void SetSeedData(int objIdx, string label)
+    {
+        initialProblem = objIdx;
+        toiletVersion = label;
     }
 }

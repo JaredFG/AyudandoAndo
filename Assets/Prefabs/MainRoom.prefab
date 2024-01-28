@@ -2328,9 +2328,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectives:
-  - {fileID: 922028643866618618, guid: 240613f38ada64d42a25c2c710b3ba52, type: 3}
   - {fileID: 3596141809311658972, guid: 49c8649b35c798941b3df61d6131aaa2, type: 3}
   - {fileID: 6672689026986577158, guid: 96b30454b2319b14d8eba8eb9b5af7e6, type: 3}
+  - {fileID: 922028643866618618, guid: 240613f38ada64d42a25c2c710b3ba52, type: 3}
   texts:
   - MX
   - EU

@@ -13,8 +13,12 @@ public class SpawnObjective : MonoBehaviour
     void Start()
     {
         Debug.Log("Spawn");
+
+
         selectedCase = Random.Range(0, objectives.Count);
         selectedLabel = texts[Random.Range(0, texts.Count)];
+
+        GameObject.Find("Toilet Task Manager").GetComponent<ToiletTaskManager>().SetSeedData(selectedCase, selectedLabel);
 
         GameObject instance = Instantiate(objectives[selectedCase], transform);
         instance.GetComponent<RandomText>().SetText(selectedLabel);
