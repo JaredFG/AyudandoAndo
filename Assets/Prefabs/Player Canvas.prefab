@@ -2600,7 +2600,9 @@ MonoBehaviour:
   gamewin: {fileID: 235183842}
   gamelose: {fileID: 642692957}
   endVoice: {fileID: 978115191301808214}
-  delayBeforeLoad: 3
+  menuButton1: {fileID: 6295164426182296572}
+  menuButton2: {fileID: 623250545}
+  delayBeforeLoad: 6
 --- !u!1 &6295164425375512347
 GameObject:
   m_ObjectHideFlags: 0

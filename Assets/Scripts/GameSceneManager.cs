@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameSceneManager : MonoBehaviour
 {
@@ -10,7 +11,10 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField] private GameObject gamewin;
     [SerializeField] private GameObject gamelose;
     [SerializeField] private GameObject endVoice;
-    [SerializeField] private float delayBeforeLoad = 3.0f;
+    [SerializeField] private Button menuButton1;
+    [SerializeField] private Button menuButton2;
+
+    [SerializeField] private float delayBeforeLoad = 5.0f;
 
     private void Start()
     {
@@ -81,6 +85,8 @@ public class GameSceneManager : MonoBehaviour
     {
         if (gamewin != null)
         {
+            menuButton1.interactable=false;
+            menuButton2.interactable=false;
             gamelose.SetActive(true);
             gamewin.SetActive(false);
             MusicManager.Instance.ChangeMusic("Win");
@@ -93,6 +99,8 @@ public class GameSceneManager : MonoBehaviour
     {
         if (gamelose != null)
         {
+            menuButton1.interactable=false;
+            menuButton2.interactable=false;
             gamelose.SetActive(true);
             gamewin.SetActive(false);
             MusicManager.Instance.ChangeMusic("Lose");
