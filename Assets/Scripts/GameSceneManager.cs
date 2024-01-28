@@ -85,8 +85,8 @@ public class GameSceneManager : MonoBehaviour
     {
         if (gamewin != null)
         {
-            menuButton1.interactable=false;
-            menuButton2.interactable=false;
+            //menuButton1.interactable=false;
+            //menuButton2.interactable=false;
             gamelose.SetActive(true);
             gamewin.SetActive(false);
             MusicManager.Instance.ChangeMusic("Win");
@@ -99,8 +99,8 @@ public class GameSceneManager : MonoBehaviour
     {
         if (gamelose != null)
         {
-            menuButton1.interactable=false;
-            menuButton2.interactable=false;
+            //menuButton1.interactable=false;
+            //menuButton2.interactable=false;
             gamelose.SetActive(true);
             gamewin.SetActive(false);
             MusicManager.Instance.ChangeMusic("Lose");
