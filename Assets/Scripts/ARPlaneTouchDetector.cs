@@ -35,6 +35,11 @@ public class ARPlaneTouchDetector : MonoBehaviour
                     Debug.Log(hitObject.transform.gameObject.name);
                     Debug.Log(hitObject.transform.gameObject.tag);
 
+                    if (hitObject.transform.gameObject.CompareTag("Interactable"))
+                    {
+                        hitObject.transform.gameObject.GetComponent<InteractionEnum>().PerformRepairAction();
+                    }
+                    
                     if (hitObject.transform.gameObject.GetComponent<BreakObject>())
                     {
                         hitObject.transform.gameObject.GetComponent<BreakObject>().TakeDamage(1, toolController.currentTool);

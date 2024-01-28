@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 2232493397165810370}
   - component: {fileID: 8019993453027957055}
   - component: {fileID: 9176949428683190298}
+  - component: {fileID: 8499558057867309305}
   m_Layer: 0
   m_Name: Lid
   m_TagString: Breakable
@@ -351,11 +352,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls: []
+  m_Delegates: []
+--- !u!114 &8499558057867309305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4204260036371409962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19aca9bbbea0400899887fabe050203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedAction: 3
 --- !u!1 &5271241259699031344
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +409,7 @@ GameObject:
   - component: {fileID: 3760140635172799108}
   - component: {fileID: 4720984952423925368}
   - component: {fileID: 7654735782745450778}
+  - component: {fileID: 4462583166934774116}
   m_Layer: 0
   m_Name: Water
   m_TagString: Interactable
@@ -484,6 +495,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.003358529
   m_Center: {x: 0.0000000013932298, y: 0.0043098885, z: 0.004232043}
+--- !u!114 &4462583166934774116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6042447500694576676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19aca9bbbea0400899887fabe050203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedAction: 2
 --- !u!1001 &1182660118760008506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -598,6 +622,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00306628, y: 0.0023272485, z: 0.0011721614}
   m_Center: {x: 0.00095031556, y: 0.0011349712, z: 0.00000037817512}
+--- !u!114 &9067398927347331602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065127810233210475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19aca9bbbea0400899887fabe050203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedAction: 4
 --- !u!1001 &2895078555910559269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -706,6 +743,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00306628, y: 0.0023272485, z: 0.0011721614}
   m_Center: {x: 0.0009503153, y: 0.0011349716, z: 0.00000037631247}
+--- !u!114 &4830697755934505996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660513894437186420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19aca9bbbea0400899887fabe050203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedAction: 5
 --- !u!4 &3433955025663766990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e5ae79ec4e36eb44809f098a0efaade,
@@ -792,6 +842,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5298335376402919368}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4312934794573324676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8240998717425356364, guid: 3e964fad5bee84d4cacc940fc42eac13,
+    type: 3}
+  m_PrefabInstance: {fileID: 5298335376402919368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4161913982985608192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4312934794573324676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19aca9bbbea0400899887fabe050203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedAction: 0
 --- !u!1001 &7873463537553654057
 PrefabInstance:
   m_ObjectHideFlags: 0

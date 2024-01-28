@@ -39,7 +39,7 @@ public class ToiletTaskManager : MonoBehaviour
      * - #1 Bajar palanca de inodoro regular
      * - #2 Bajar palanca de inodoro espejo
      * - #3 Bombear taza 
-     * - #4 Romper la taza de la cisterna
+     * - #4 Romper la tapa de la cisterna
      * - #5 Cerrar llave derecha
      * - #6 Cerrar llave izquierda
      */
@@ -51,21 +51,27 @@ public class ToiletTaskManager : MonoBehaviour
         switch (stepId)
         {
             case 1:
+                Debug.Log("PERFORMED ACTION");
                 PerformAction1();
                 break;
             case 2:
+                Debug.Log("PERFORMED ACTION");
                 PerformAction2();
                 break;
             case 3:
+                Debug.Log("PERFORMED ACTION");
                 PerformAction3();
                 break;
             case 4:
+                Debug.Log("PERFORMED ACTION");
                 PerformAction4();
                 break;
             case 5:
+                Debug.Log("PERFORMED ACTION");
                 PerformAction5();
                 break;
             case 6:
+                Debug.Log("PERFORMED ACTION");
                 PerformAction6();
                 break;
         }
