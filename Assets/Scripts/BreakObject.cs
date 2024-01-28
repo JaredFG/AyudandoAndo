@@ -7,6 +7,8 @@ public class BreakObject : MonoBehaviour
 {
     [SerializeField] private GameObject destryedObject;
     [SerializeField] private float health;
+    [SerializeField] private ToolController.ToolType toolToUse;
+
     private float currentHealth;
 
     void Start()
@@ -19,13 +21,16 @@ public class BreakObject : MonoBehaviour
         
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, ToolController.ToolType toolType)
     {
-        currentHealth -= damage;
-
-        if (currentHealth <= 0)
+        if (toolType == toolToUse)
         {
-            Break();
+            currentHealth -= damage;
+
+            if (currentHealth <= 0)
+            {
+                Break();
+            }
         }
     }
 

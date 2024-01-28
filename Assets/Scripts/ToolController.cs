@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class ToolController : MonoBehaviour
 {
+    public enum ToolType
+    {
+        Wrench,
+        Hammer,
+        Plunger,
+        Saw
+    }
+
     [SerializeField] private List<GameObject> tools;
     private int currentIndex;
 

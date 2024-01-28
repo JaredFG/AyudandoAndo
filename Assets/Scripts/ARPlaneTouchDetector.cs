@@ -36,7 +36,7 @@ public class ARPlaneTouchDetector : MonoBehaviour
 
                     if (hitObject.transform.gameObject.GetComponent<BreakObject>())
                     {
-                        hitObject.transform.gameObject.GetComponent<BreakObject>().TakeDamage(1);
+                        //hitObject.transform.gameObject.GetComponent<BreakObject>().TakeDamage(1);
                     }
                 }
             }

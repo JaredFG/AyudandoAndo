@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Breakable
   - Prop
+  - Lever
+  - Interactable
   layers:
   - Default
   - TransparentFX
